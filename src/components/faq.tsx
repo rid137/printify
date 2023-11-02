@@ -25,10 +25,9 @@ const Faq = () => {
                         visible: { opacity: 1, y: 0 },
                     }}  
                     className="center flex-col gap-6"
-                >   
-                
+                >                 
                     {faq.map((item, index) => (
-                        <div key={index} className='border p-4 md:p-8 w-full transition-all '>
+                        <div key={index} className='border border-gray-300 p-4 md:p-8 w-full transition-all '>
                             <div className='flex justify-between items-center gap-3 cursor-pointer transition-all'>
                                 <div className="w-full font-bold text-[.9rem] tracking-wide " onClick={() => handleOpenClick(index)}>
                                     {item.question}

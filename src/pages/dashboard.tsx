@@ -64,7 +64,7 @@ const Dashboard = () => {
                     <Spinner cls='mx-auto'/>
                     :
                     
-                    <table className='min-w-full overflow-x-auto bg-gray-50'>
+                    <table className='min-w-full overflow-x-auto bg-gray-200'>
                         <thead >
                             <tr className='flex min-w-full gap-3 mb-4 justify-between items-center'>
                                 <th className='text-[.75rem] w-1/5  md:text-[.8rem] '>Order Number</th>
