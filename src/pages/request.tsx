@@ -109,7 +109,7 @@ const Request: React.FC<HomeProps> = ({setShowModal}) => {
     let extension: string = checkExtension(fileName.name)
     console.log("extension", extension)
 
-    let extArray = [".pdf",".ppt",".doc",".docx" ]
+    let extArray = [".pdf", ".PDF", ".ppt", ".PPT", ".doc", ".DOC", ".docx", ".DOCX" ]
 
     if (!extArray.includes(extension)) {
         alert("Document must be pdf, ppt or Ms word") 

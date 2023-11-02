@@ -17,6 +17,16 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ setShowModal }) => {
     const [openNav, setOpenNav] = useState(false);
 
+    const updateModalAndNav = () => {
+        setShowModal(true);
+        setOpenNav((prev) => !prev);
+    }
+
+    const handleSignOutAndUpdateNav = () => {
+        handleSignOut();
+        setOpenNav((prev) => !prev);
+    }
+
     const { user, logOut } = UserAuth();
 
     const handleSignOut = async () => {
@@ -77,20 +87,20 @@ const Nav: React.FC<NavProps> = ({ setShowModal }) => {
                     <AiOutlineClose className='text-[2rem]' />
                 </div>    
                 <div className="flex__column mt-8 gap-4 ">
-                    <a href="#pricing" className='text-white text-[.9rem] hover:tracking-wide transition-all'>Pricing</a>
+                    <a onClick={() => setOpenNav((prev) => !prev)} href="#pricing"  className='text-white text-[.9rem] hover:tracking-wide transition-all'>Pricing</a>
                     {
                         user ? 
                         <>
-                            <li onClick={handleSignOut} className='text-white text-[.9rem] hover:tracking-wide transition-all list-none'>Sign Out</li>            
+                            <li onClick={handleSignOutAndUpdateNav} className='text-white text-[.9rem] hover:tracking-wide transition-all list-none'>Sign Out</li>            
                         </> :
                         <>
-                            <li onClick={() => setShowModal(true)} className='text-white text-[.9rem] hover:tracking-wide transition-all list-none'>Sign Up</li>            
-                            <li onClick={() => setShowModal(true)} className='text-white text-[.9rem] hover:tracking-wide transition-all list-none'>Sign In</li>            
+                            <li onClick={updateModalAndNav} className='text-white text-[.9rem] hover:tracking-wide transition-all list-none'>Sign Up</li>            
+                            <li onClick={updateModalAndNav} className='text-white text-[.9rem] hover:tracking-wide transition-all list-none'>Sign In</li>            
 
                         </>
 
                     }
-                    <div className=" sm:hidden text-center">
+                    <div className=" sm:hidden text-center" onClick={() => setOpenNav((prev) => !prev)}>
                         <Link to="/request">
                             <CustomButton
                                 onClick={() => {}}
