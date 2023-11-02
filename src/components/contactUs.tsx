@@ -20,7 +20,7 @@ const Contact = () => {
 
 
   return (
-    <section id='contact' className='bg-gray-50 py-16 px-4 xs:px-6 sm:px-10 mb-10'>
+    <section id='contact' className='bg-gray-200 py-16 px-4 xs:px-6 sm:px-10 mb-10'>
         <motion.div
             initial="hidden"
             whileInView="visible"

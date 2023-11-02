@@ -18,7 +18,7 @@ export const App = () => {
             <BrowserRouter>
             <AuthContextProvider>
                 <Nav showModal={showModal} setShowModal={setShowModal} />
-                <div className="bg-gray-50">
+                <div className="bg-gray-200">
                     <Routes>
                         <Route path="/" element={<Home showModal={showModal} setShowModal={setShowModal} />} />
                         <Route path='/request' element={<Request showModal={showModal} setShowModal={setShowModal} />} />

@@ -8,7 +8,7 @@ import PriceCalculator from './priceCalculator';
 const Pricing = () => {
 
   return (
-    <section id='pricing' className='pt-4 px-4 xs:px-6 sm:px-10 mb-10 bg-gray-50'>
+    <section id='pricing' className='pt-4 px-4 xs:px-6 sm:px-10 mb-10 bg-gray-200'>
         <motion.p
             initial="hidden"
             whileInView="visible"
