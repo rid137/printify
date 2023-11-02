@@ -23,7 +23,7 @@ const Hero = () => {
                         }}
                         className="sm:text-[2.5rem] text-center  md:text-left lg:text-left xl:text-left min-h-fit text-[1.6rem] font-playfair font-bold md:w-[38rem]"
                     >
-                        Remote Printing: Skip the Trip, Save Time 
+                        Remote Printing: Skip the Trip, Save Your Time 
                     </motion.h1>
                     
 
