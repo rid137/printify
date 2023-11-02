@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Playfair+Display&family=Roboto:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    /* text-[1.3rem] font-bold */
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+Link, a {
+    text-decoration: none !important;
+}
+
+
+.flex__column,
+.flex__center,
+.flex__between,
+.flex__end,
+.flex__start,
+.flex__start__between {
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; */
+    display: flex;
+}
+
+.flex__column {
+    flex-direction: column;
+}
+
+.flex__center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex__between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__end {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex__start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex__start__between {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@keyframes spinner-grow-shrink {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes moving-bg {
+    0% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: -150% 0;
+    }
+}
+
+  
+  
