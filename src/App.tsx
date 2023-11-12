@@ -8,13 +8,13 @@ import { AuthContextProvider } from './context/AuthContext';
 import Dashboard from './pages/dashboard';
 import Invoice from './pages/invoice';
 import Notfound from './pages/notfound';
-// import { AuthContextProvider } from './context/AuthContext';
 
 export const App = () => {
     const [showModal, setShowModal] = useState(false)
 
     return (
-        // <div className="p-4">
+        <div className="p-4">
+            <div className="">Hello</div>
             <BrowserRouter>
             <AuthContextProvider>
                 <Nav showModal={showModal} setShowModal={setShowModal} />
@@ -31,6 +31,6 @@ export const App = () => {
                 <Footer />
             </AuthContextProvider>
         </BrowserRouter>
-        // </div>
+        </div>
     )
 }

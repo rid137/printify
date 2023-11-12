@@ -9,7 +9,7 @@ export const belowNavData = ["Final Year Project", "Colored/B&W","Assignments", 
 export const pricingData = [
     {
         title: 'Basic',
-        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, laudantium.',
+        body: 'You are printing a document of less than 100 pages. There is no discount here',
         firstItem: {
             title: 'Page: 1-100',
             icon: <BsCheckCircleFill />,
@@ -30,7 +30,7 @@ export const pricingData = [
     },
     {
         title: 'Bulk',
-        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, laudantium.',
+        body: 'You are printing a document of 100 to 300 pages. There is a discount here which also includes reduction of price for coloured pages.',
         firstItem: {
             title: 'Page: 1-300',
             icon: <BsCheckCircleFill />,
@@ -51,7 +51,7 @@ export const pricingData = [
     },
     {
         title: 'Mega',
-        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, laudantium.',
+        body: 'You are printing a document of more than 500 pages. There is a discount here which also includes reduction of price for coloured pages.',
         firstItem: {
             title: 'Page: 1-500',
             icon: <BsCheckCircleFill />,
